@@ -5,6 +5,7 @@ services:
     container_name: vrising
     image: trueosiris/vrising
     network_mode: bridge
+    restart: unless-stopped
     environment:
       - TZ=America/New_York
       - SERVERNAME=StoogeCentral
